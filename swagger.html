@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Eligibility API Documentation</title>
+  <link href="https://editor.swagger.io/dist/swagger-editor.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="swagger-editor"></div>
+
+  <script src="https://editor.swagger.io/dist/swagger-editor-bundle.js"> </script>
+  
+  <script>
+    window.onload = function () {
+      // create the editor
+      window.editor = SwaggerEditorBundle({
+        dom_id: '#swagger-editor',
+        url: 'http://localhost:1234/access_eligibility_api.yaml'
+      });
+
+      // update panel styles
+      document.querySelector('div.Pane1').setAttribute('style', 'display: none;');
+      document.querySelector('div.Pane2').setAttribute('style', 'width: 100%;');
+      document.querySelector('div.SplitPane.vertical').setAttribute('style', 'height: 100%;');
+    }
+  </script>
+
+</body>
+
+</html>
