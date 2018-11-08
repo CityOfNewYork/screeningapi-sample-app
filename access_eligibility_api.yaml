@@ -6,6 +6,9 @@ info:
 tags:
   - name: Cognito User Pool Authorization API
   - name: Eligibility Screening API
+servers:
+  - url: https://{endpoint-staging}
+  - url: https://{endpoint-prod}
 paths:
   /authToken:
     post:
